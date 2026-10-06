@@ -1,0 +1,17 @@
+*.js
+!jest.config.js
+!console/**/*.js
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# Private learning notes (mention interview prep), never pushed to GitHub
+docs/
+
+# Local secrets
+.env.local
+**/.env.local
+cdk-outputs.json

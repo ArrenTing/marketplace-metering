@@ -1,0 +1,39 @@
+{
+  "name": "marketplace-metering",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "console"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "dev:console": "npm run dev -w vendor-console"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.15.0",
+    "@swc/jest": "^0.2.39",
+    "@types/aws-lambda": "^8.10.163",
+    "@types/jest": "^30",
+    "@types/node": "^24.10.1",
+    "aws-cdk": "2.1143.0",
+    "aws-sdk-client-mock": "^4.1.0",
+    "aws-sdk-client-mock-jest": "^4.1.0",
+    "esbuild": "^0.28.2",
+    "jest": "^30",
+    "tsx": "^4.23.0",
+    "typescript": "~7.0.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch-logs": "^3.1145.0",
+    "@aws-sdk/client-dynamodb": "^3.1141.0",
+    "@aws-sdk/client-eventbridge": "^3.1142.0",
+    "@aws-sdk/client-sqs": "^3.1145.0",
+    "@aws-sdk/lib-dynamodb": "^3.1141.0",
+    "@aws-sdk/util-dynamodb": "^3.996.9",
+    "aws-cdk-lib": "^2.270.0",
+    "constructs": "^10.5.0"
+  }
+}
